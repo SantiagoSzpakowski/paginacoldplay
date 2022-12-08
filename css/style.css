@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    line-height: 1.3;
+    color: white;
+    background-color:#3CC93F;
+}
+
+.formato_texto{
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 1.2em;
+}
+
+/*BARRA DE NAVEGACION----------------------------------------------------------------------------------------*/
+header {
+    position: fixed;
+    top: 0rem;
+    width: 100%;
+    z-index: 1111
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu__lista {
+    list-style: none;
+    font-weight: 100;
+    background-color: black;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.menu___lista_elemento {
+    display: inline-block;
+}
+
+.menu___lista_elemento a {
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.menu___lista_elemento a:hover {
+    font-weight: bold;    
+}
+
+/*INDEX------------------------------------------------------------------------------------------------------*/
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    position: relative
+}
+
+.img-uno {
+    background-image: url('../assets/img/portada.jpg');
+    height: 40rem;
+}
+
+.img-dos{
+    background-image:url('../assets/img/pyl.jpg');
+    height: 25rem;
+}
+
+.texto-interior{
+	color:#fff;
+	font-size: 4rem;
+	font-weight: bold;
+	left: 10%;
+	position: relative;
+	text-align: center;
+	top:70%;
+	width: 80%;
+}
+
+.imgTxtPrincipal{
+    position: relative;
+    background-color: black;
+}
+
+.imgTxtPrincipal__img{
+    width: 100%;
+}
+
+.imgTxtPrincipal__parrafo{
+    margin: 0px 30vw 0px 0px;
+    position:absolute;
+    top: 50%;
+    padding: 0vw 8vw 0vw 10vw;
+    transform: translate(0%, -50%);
+}
+
+.premios_logros{
+    padding: 3% 5% 3% 5%;
+    background-image: url(../assets/img/logros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.premios_logros__lista{
+    list-style: none;
+}
+
+.premios_logros__lista li{
+    padding: 1%;
+    font-size: 1rem;
+}
+
+/*FOOTER-----------------------------------------------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    background-color: black;
+    justify-content: left;
+    align-items: center;
+    height: 12vh;
+    flex-wrap: wrap;
+}
+
+.footer__img{
+    width: 25%;
+}
+.footer__img img{
+    width: 70%;
+}
+
+.footer__terminos{
+    width: 50%;
+}
+
+.footer__contacto{
+    width: 25%;
+}
+
+.footer__contacto_redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 12vh;
+}
+
+.footer__contacto_redes li{
+    text-decoration: none;
+    list-style: none;
+    width: 20%;
+}
+
+.footer__contacto_redes li a{
+    padding: 1.5rem;
+}
+
+.fa-brands{
+    color: white;
+}
+
+/*PORTADA GENERAL--------------------------------------------------------------------------------------------*/
+.portada{
+    margin: 10vh;
+    align-items:center;
+}
+
+.portada__texto{
+    width: 80%;
+    margin-right: 0%;
+}
+.portada__texto_titulo{
+    margin-bottom: 2%;
+    font-size: 3rem;
+}
+
+.portada__texto_parrafo{
+    width: 100%;
+}
+
+/*DISCOGRAFIA------------------------------------------------------------------------------------------------*/
+
+.body_discografia{
+    background-image: url("../assets/img/fondo_galeria.jpg");
+    background-size:cover;
+}
+
+.portada_discografia{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 10vh;
+    align-items:center;
+}
+
+.portada__imagen{
+    text-align: center;
+}
+
+.portada__imagen_img{
+    width: 40%;
+    border-radius: 10%;
+    
+}
+
+.albumes{
+    display: flex;
+    flex-wrap: wrap;
+    height: 150vh;
+    justify-content: space-evenly;
+    gap: 0.5%;
+}
+
+.albumes_album{
+    width: 25%;
+    margin-bottom: 3%;
+}
+
+/*GALERIA----------------------------------------------------------------------------------------------------*/
+
+.body_galeria{
+    background-image: url("../assets/img/fondo_discografia.jpg");
+}
+
+.galeria{
+    margin-bottom: 3%;
+}
+.galeria__fotos{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    list-style: none;
+    gap: 0.2%;
+}
+
+.galeria__fotos_foto{
+    width: 30%;
+}
+
+.galeria__fotos_foto img{
+    width: 100%;
+    height: 98%;
+}
+
+/*MIEMBROS---------------------------------------------------------------------------------------------------*/
+
+.body_miembros{
+    background-image: url("../assets/img/fondo_miembros.jpg");
+}
+
+.banda{
+    margin: 0 10% 0 10%
+}
+
+.banda__miembro{
+    display: flex;
+    align-items: center;
+}
+
+.banda__miembro:last-child{
+    margin-bottom: 3%;
+}
+
+.banda__miembro_txt{
+    margin: 1%;
+}
+
+.banda__miembro_txt h2{
+    font-size: 2rem;
+}
+
+.banda__miembro_img{
+    width: 50%;
+    height: 50;
+    border-radius: 10%;
+}
+
+/*CONTACTO---------------------------------------------------------------------------------------------------*/
+
+.body_contacto{
+    background-image: url("../assets/img/fondo_contacto.jpg");
+}
+
+.mainContacto{
+    display: flex;
+}
+
+.portada__texto_contacto{
+    width: 50%;
+}
+
+.formulario_contacto{
+    width: 50%;
+    margin: 10vh 0 3% 0;
+    padding-left: 0%;
+}
+
+.formulario{
+    background-color: white;
+    border-radius: 5%;
+    padding: 2%;
+    width: 70%;
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+}
+
+.dato{
+    outline: none;
+    border: solid 1px rgb(117, 117, 117);
+    padding: 0.5rem;
+    margin: 1% 0 5% 0;
+    width: 100%;
+}
+
+.dato:focus{
+    border-color: black;
+}
+
+.boton{
+    border-radius: 0.5rem;
+    display: inline-block;
+    padding: 1.2rem 1rem;
+    color: white;
+    width: 100%;
+    margin: 1% 0 3% 0;
+    border: none
+}
+
+.boton:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.boton_verde{
+    background-color: #3CC93F;
+}
+
+.boton_rojo{
+    background-color: #ca1717;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/*MOBILE-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+    
+    .img-uno {
+        width: 100%;
+    }
+}
