@@ -133,6 +133,7 @@ footer{
     align-items: center;
     height: 12vh;
     flex-wrap: wrap;
+    bottom: 0;
 }
 
 .footer__img{
@@ -203,7 +204,6 @@ footer{
     justify-content:space-around;
     align-items: center;
     margin: 10vh;
-    align-items:center;
 }
 
 .portada__imagen{
@@ -213,7 +213,6 @@ footer{
 .portada__imagen_img{
     width: 40%;
     border-radius: 10%;
-    
 }
 
 .albumes{
@@ -356,12 +355,93 @@ footer{
 
 
 /*-----------------------------------------------------------------------------------------------------------*/
-/*MOBILE-----------------------------------------------------------------------------------------------------*/
+/*MOBILE VERTICAL 420px hasta 380px--------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 420px) {
+
+    .formato_texto{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    /*BARRA NAVEGACION---------------------------------------------------------------------------------------*/
+    header {
+        position: absolute;
+    }
+    
+    .menu__lista {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }    
+    
+    .menu___lista_elemento {
+        display: inline-block;
+    }
+    
+    .menu___lista_elemento a {
+        padding: 1rem 0.3rem 1rem 0.3rem;
+    }
+
+    /*INDEX--------------------------------------------------------------------------------------------------*/
+
+    .parallax {
+        background-attachment: local;
+    }
     
     .img-uno {
+        height: 25rem;
+    }
+    
+    .img-dos{
+        height: 25rem;
+    }
+    
+    .texto-interior{
+        font-size: 2rem;
+        top:75%;
+    }
+
+    .texto-interior h2{
+        font-size: 2.4rem;
+    }
+    
+    .imgTxtPrincipal{
+        background: linear-gradient(to bottom, #312044, #812878);
+    }
+    
+    .imgTxtPrincipal__img{
+        display:none;
+    }
+    
+    .imgTxtPrincipal__parrafo{
+        position:relative;
+        padding: 10vw 5vw 10vw 5vw;
+        transform: translate(0%, 0%);
         width: 100%;
+    }
+    
+    .premios_logros{
+        padding: 5%;
+    }
+        
+    .premios_logros__lista li{
+        padding: 2%;
+    }
+
+
+
+
+
+
+    .albumes{
+        height: auto;
+    }
+
+    .albumes_album{
+        width: 70%;
+        height: 60vh;
     }
 }
