@@ -175,7 +175,7 @@ footer{
 
 /*PORTADA GENERAL--------------------------------------------------------------------------------------------*/
 .portada{
-    margin: 10vh;
+    margin: 15vh;
     align-items:center;
 }
 
@@ -203,7 +203,7 @@ footer{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    margin: 10vh;
+    margin: 15vh;
 }
 
 .portada__imagen{
