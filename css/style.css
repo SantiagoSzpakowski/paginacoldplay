@@ -20,6 +20,10 @@ body {
     line-height: 1.2em;
 }
 
+.card{
+    margin: 0;
+}
+
 /*BARRA DE NAVEGACION----------------------------------------------------------------------------------------*/
 header {
     position: fixed;
