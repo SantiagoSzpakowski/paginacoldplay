@@ -81,14 +81,20 @@ header {
 }
 
 .texto-interior{
-	color:#fff;
-	font-size: 4rem;
-	font-weight: bold;
-	left: 10%;
+    left: 10%;
 	position: relative;
 	text-align: center;
 	top:70%;
 	width: 80%;
+}
+
+.texto-interior h1{
+	font-size: 7rem;
+	font-weight: bold;
+}
+
+.texto-interior h2{
+	font-size: 5rem;
 }
 
 .imgTxtPrincipal{
@@ -363,14 +369,14 @@ footer{
 /*MOBILE VERTICAL 420px hasta 380px--------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 420px) {
+/* @media screen and (max-width: 420px) {
 
     .formato_texto{
         font-size: 1rem;
         line-height: 1.2rem;
     }
 
-    /*BARRA NAVEGACION---------------------------------------------------------------------------------------*/
+    /*BARRA NAVEGACION---------------------------------------------------------------------------------------
     header {
         position: absolute;
     }
@@ -390,7 +396,7 @@ footer{
         padding: 1rem 0.3rem 1rem 0.3rem;
     }
 
-    /*INDEX--------------------------------------------------------------------------------------------------*/
+    /*INDEX--------------------------------------------------------------------------------------------------
 
     .parallax {
         background-attachment: local;
@@ -449,4 +455,6 @@ footer{
         width: 70%;
         height: 60vh;
     }
+    
 }
+*/
