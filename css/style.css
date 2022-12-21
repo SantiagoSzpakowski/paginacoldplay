@@ -20,46 +20,6 @@ body {
     line-height: 1.2em;
 }
 
-/*BARRA DE NAVEGACION----------------------------------------------------------------------------------------*/
-header {
-    position: fixed;
-    top: 0rem;
-    width: 100%;
-    z-index: 1111
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.menu__lista {
-    list-style: none;
-    font-weight: 100;
-    background-color: black;
-    padding-left: 1%;
-    padding-right: 1%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.menu___lista_elemento {
-    display: inline-block;
-}
-
-.menu___lista_elemento a {
-    padding: 1rem;
-    text-decoration: none;
-    display: block;
-    color: white;
-}
-
-.menu___lista_elemento a:hover {
-    font-weight: bold;    
-}
-
 /*INDEX------------------------------------------------------------------------------------------------------*/
 .parallax {
     background-attachment: fixed;
@@ -131,49 +91,6 @@ header {
 }
 
 /*FOOTER-----------------------------------------------------------------------------------------------------*/
-
-footer{
-    display: flex;
-    background-color: black;
-    justify-content: left;
-    align-items: center;
-    height: 12vh;
-    flex-wrap: wrap;
-    bottom: 0;
-}
-
-.footer__img{
-    width: 25%;
-}
-.footer__img img{
-    width: 70%;
-}
-
-.footer__terminos{
-    width: 50%;
-}
-
-.footer__contacto{
-    width: 25%;
-}
-
-.footer__contacto_redes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 12vh;
-}
-
-.footer__contacto_redes li{
-    text-decoration: none;
-    list-style: none;
-    width: 20%;
-}
-
-.footer__contacto_redes li a{
-    padding: 1.5rem;
-}
 
 .fa-brands{
     color: white;
@@ -272,27 +189,6 @@ footer{
     background-image: url("../assets/img/fondo_miembros.jpg");
 }
 
-.banda{
-    margin: 0 10% 0 10%
-}
-
-.banda__miembro{
-    display: flex;
-    align-items: center;
-}
-
-.banda__miembro:last-child{
-    margin-bottom: 3%;
-}
-
-.banda__miembro_txt{
-    margin: 1%;
-}
-
-.banda__miembro_txt h2{
-    font-size: 2rem;
-}
-
 .banda__miembro_img{
     border-radius: 10%;
     margin-top: 3%;
@@ -303,20 +199,6 @@ footer{
 
 .body_contacto{
     background-image: url("../assets/img/fondo_contacto.jpg");
-}
-
-.mainContacto{
-    display: flex;
-}
-
-.portada__texto_contacto{
-    width: 50%;
-}
-
-.formulario_contacto{
-    width: 50%;
-    margin: 10vh 0 3% 0;
-    padding-left: 0%;
 }
 
 .formulario{
@@ -365,96 +247,3 @@ footer{
 }
 
 
-/*-----------------------------------------------------------------------------------------------------------*/
-/*MOBILE VERTICAL 420px hasta 380px--------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------------------*/
-
-/* @media screen and (max-width: 420px) {
-
-    .formato_texto{
-        font-size: 1rem;
-        line-height: 1.2rem;
-    }
-
-    /*BARRA NAVEGACION---------------------------------------------------------------------------------------
-    header {
-        position: absolute;
-    }
-    
-    .menu__lista {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }    
-    
-    .menu___lista_elemento {
-        display: inline-block;
-    }
-    
-    .menu___lista_elemento a {
-        padding: 1rem 0.3rem 1rem 0.3rem;
-    }
-
-    /*INDEX--------------------------------------------------------------------------------------------------
-
-    .parallax {
-        background-attachment: local;
-    }
-    
-    .img-uno {
-        height: 25rem;
-    }
-    
-    .img-dos{
-        height: 25rem;
-    }
-    
-    .texto-interior{
-        font-size: 2rem;
-        top:75%;
-    }
-
-    .texto-interior h2{
-        font-size: 2.4rem;
-    }
-    
-    .imgTxtPrincipal{
-        background: linear-gradient(to bottom, #312044, #812878);
-    }
-    
-    .imgTxtPrincipal__img{
-        display:none;
-    }
-    
-    .imgTxtPrincipal__parrafo{
-        position:relative;
-        padding: 10vw 5vw 10vw 5vw;
-        transform: translate(0%, 0%);
-        width: 100%;
-    }
-    
-    .premios_logros{
-        padding: 5%;
-    }
-        
-    .premios_logros__lista li{
-        padding: 2%;
-    }
-
-
-
-
-
-
-    .albumes{
-        height: auto;
-    }
-
-    .albumes_album{
-        width: 70%;
-        height: 60vh;
-    }
-    
-}
-*/

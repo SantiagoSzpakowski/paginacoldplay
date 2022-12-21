@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -23,68 +23,71 @@
 
     <header>
         <!--Navbar Bootstrap-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-                <div class="container-fluid">
-                    <a class="navbar-brand fs-2 ms-3" href="../index.html">Coldplay</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./miembros.html">Miembros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./discografia.html">Discografía</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./galeria.html">Galería</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-2 ms-3" href="../index.html">Coldplay</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./miembros.html">Miembros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./discografia.html">Discografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </header>
 
     <main class="mainContacto">
-        <section class="portada portada__texto_contacto">
-            <h1 class="portada__texto_titulo">Contactanos</h1>
-            <p class="portada__texto_parrafo formato_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, incidunt optio? Iusto, eius eum obcaecati
-                suscipit officia delectus harum repellat omnis, consequatur voluptatum eaque quasi asperiores
-                repudiandae, voluptatem nam possimus!</p>
-            <img src="" alt="">
-        </section>
 
-        <section class="formulario_contacto">
-            <form action="" class="formulario">
+        <div class="container-fluid">
+            <div class="row m-0">
+                <section class="col-md-6 col-sm-12 my-5 pt-5 ps-5">
+                    <h1 class="fs-1 py-2">Contactanos</h1>
+                    <p class="formato_texto d-flex flex-wrap">Si deseas consultar mayor información o tenés alguna 
+                        sugerencia para mejorar nuestro sitio, no dudes en contactarnos.</p>
+                </section>
 
-                <div><label for="">Nombre:</label></div>
-                <input type="text" name="" class="dato">
+                <section class="col-sm-12 col-md-6 my-sm-1 my-md-5 pt-sm-0 pt-md-5 d-flex justify-content-center">
+                    <form action="" class="formulario">
 
-                <div><label for="">Mail:</label></div>
-                <input type="email" name="" class="dato">
+                        <div><label for="">Nombre:</label></div>
+                        <input type="text" name="" class="dato">
 
-                <div><label for="">Asunto:</label></div>
-                <input type="text" name="" class="dato">
+                        <div><label for="">Mail:</label></div>
+                        <input type="email" name="" class="dato">
 
-                <div> <label for="">Mensaje:</label></div>
-                <textarea name="" cols="30" rows="5" class="dato"></textarea>
+                        <div><label for="">Asunto:</label></div>
+                        <input type="text" name="" class="dato">
 
-                <div class="botones">
-                    <input type="submit" value="Enviar" class="boton boton_verde">
-                    <input type="reset" value="Borrar" class="boton boton_rojo">
-                </div>
+                        <div> <label for="">Mensaje:</label></div>
+                        <textarea name="" cols="30" rows="5" class="dato"></textarea>
 
-            </form>
-        </section>
+                        <div class="botones">
+                            <input type="submit" value="Enviar" class="boton boton_verde">
+                            <input type="reset" value="Borrar" class="boton boton_rojo">
+                        </div>
+                        
+                    </form>
+                </section>
+            </div>
+        </div>
     </main>
 
     <footer class="container-fluid">
