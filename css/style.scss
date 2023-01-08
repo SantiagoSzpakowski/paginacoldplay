@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 @import "../sass/normalize/reset";
+@import "../sass/utilities/color";
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
     line-height: 1.3;
-    color: white;
-    background-color: #3CC93F;
+    color: $blanco;
 }
 
 .formato_texto {
@@ -55,7 +55,7 @@ body {
 
 .imgTxtPrincipal {
     position: relative;
-    background-color: black;
+    background-color: $negro;
 }
 
 .imgTxtPrincipal__img {
@@ -88,7 +88,7 @@ body {
 
 /*FOOTER-----------------------------------------------------------------------------------------------------*/
 .fa-brands {
-    color: white;
+    color: $blanco;
 }
 
 /*PORTADA GENERAL--------------------------------------------------------------------------------------------*/
@@ -118,7 +118,7 @@ body {
 
 /*DISCOGRAFIA------------------------------------------------------------------------------------------------*/
 .body_discografia {
-    background-image: url("../assets/img/fondo_galeria.jpg");
+    background-image: url("../assets/img/fondo_discografia.jpg");
     background-size: cover;
 }
 
@@ -144,41 +144,15 @@ body {
     height: 350vh;                  /*Corregir tamaño*/
     justify-content: space-evenly;
     gap: 0.5%;
-    background-color: #ca1717;
 }
 
 .albumes_album {
     width: 350px;                   /*Corregir tamaño*/
     margin-bottom: 3%;
-    background-color: blue
 }
 
 /*GALERIA----------------------------------------------------------------------------------------------------*/
-.body_galeria {
-    background-image: url("../assets/img/fondo_discografia.jpg");
-}
-
-.galeria {
-    margin-bottom: 3%;
-}
-
-.galeria__fotos {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    justify-content: center;
-    list-style: none;
-    gap: 0.2%;
-}
-
-.galeria__fotos_foto {
-    width: 30%;             /*Corregir tamaño*/
-}
-
-.galeria__fotos_foto img {
-    width: 100%;
-    height: 98%;
-}
+@import "../sass/layout/galeria";
 
 /*MIEMBROS---------------------------------------------------------------------------------------------------*/
 .body_miembros {
@@ -197,31 +171,31 @@ body {
 }
 
 .formulario {
-    background-color: white;
+    background-color: $blanco;
     border-radius: 5%;
     padding: 2%;
     width: 70%;
-    color: #3a3a3a;
+    color: $formularioBase;
     font-size: 1rem;
 }
 
 .dato {
     outline: none;
-    border: solid 1px #757575;
+    border: solid 1px $formularioBordes;
     padding: 0.5rem;
     margin: 1% 0 5% 0;
     width: 100%;
 }
 
 .dato:focus {
-    border-color: black;
+    border-color: $negro;
 }
 
 .boton {
     border-radius: 0.5rem;
     display: inline-block;
     padding: 1.2rem 1rem;
-    color: white;
+    color: $blanco;
     width: 100%;
     margin: 1% 0 3% 0;
     border: none;
@@ -230,13 +204,13 @@ body {
 .boton:hover {
     border-style: solid;
     border-width: 1px;
-    border-color: black;
+    border-color: $negro;
 }
 
 .boton_verde {
-    background-color: #3CC93F;
+    background-color: map-get($colores_boton, btnEnviar);
 }
 
 .boton_rojo {
-    background-color: #ca1717;
+    background-color: map-get($colores_boton, btnBorrar);
 }

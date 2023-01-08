@@ -1,0 +1,32 @@
+.body_galeria {
+    background-image: url("../../assets/img/fondo_discografia.jpg");
+}
+
+.galeria {
+    margin-bottom: 3%;
+}
+
+.galeria__fotos {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    list-style: none;
+    gap: 0.2%;
+}
+
+.galeria__fotos_foto {
+    width: 30%;             /*Corregir tamaño*/
+
+    img{
+        width: 100%;
+        height: 98%; 
+    }
+}
+
+/*
+.galeria__fotos_foto img{
+    width: 100%;
+    height: 98%;
+}
+*/
