@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 * {
     box-sizing: border-box;
@@ -11,10 +11,10 @@ body {
     font-size: 100%;
     line-height: 1.3;
     color: white;
-    background-color:#3CC93F;
+    background-color: #3CC93F;
 }
 
-.formato_texto{
+.formato_texto {
     font-size: 1.4rem;
     text-align: left;
     line-height: 1.2em;
@@ -27,123 +27,122 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
-    position: relative
+    position: relative;
 }
 
 .img-uno {
-    background-image: url('../assets/img/portada.jpg');
+    background-image: url("../assets/img/portada.jpg");
     height: 40rem;
 }
 
-.img-dos{
-    background-image:url('../assets/img/pyl.jpg');
+.img-dos {
+    background-image: url("../assets/img/pyl.jpg");
     height: 25rem;
 }
 
-.texto-interior{
+.texto-interior {
     left: 10%;
-	position: relative;
-	text-align: center;
-	top:70%;
-	width: 80%;
+    position: relative;
+    text-align: center;
+    top: 70%;
+    width: 80%;
 }
 
-.texto-interior h1{
-	font-size: 7rem;
-	font-weight: bold;
+.texto-interior h1 {
+    font-size: 7rem;
+    font-weight: bold;
 }
 
-.texto-interior h2{
-	font-size: 5rem;
+.texto-interior h2 {
+    font-size: 5rem;
 }
 
-.imgTxtPrincipal{
+.imgTxtPrincipal {
     position: relative;
     background-color: black;
 }
 
-.imgTxtPrincipal__img{
+.imgTxtPrincipal__img {
     width: 100%;
 }
 
-.imgTxtPrincipal__parrafo{
+.imgTxtPrincipal__parrafo {
     margin: 0px 30vw 0px 0px;
-    position:absolute;
+    position: absolute;
     top: 50%;
     padding: 0vw 8vw 0vw 10vw;
     transform: translate(0%, -50%);
 }
 
-.premios_logros{
+.premios_logros {
     padding: 3% 5% 3% 5%;
     background-image: url(../assets/img/logros.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.premios_logros__lista{
+.premios_logros__lista {
     list-style: none;
 }
 
-.premios_logros__lista li{
+.premios_logros__lista li {
     padding: 1%;
     font-size: 1rem;
 }
 
 /*FOOTER-----------------------------------------------------------------------------------------------------*/
-
-.fa-brands{
+.fa-brands {
     color: white;
 }
 
 /*PORTADA GENERAL--------------------------------------------------------------------------------------------*/
-.portada{
+.portada {
     margin: 15vh;
-    align-items:center;
+    align-items: center;
 }
 
-.portada__texto{
+.portada__texto {
     width: 80%;
     margin-right: 0%;
 }
-.portada__texto_titulo{
+
+.portada__texto_titulo {
     margin-bottom: 2%;
     font-size: 3rem;
 }
 
-.portada__texto_parrafo{
+.portada__texto_parrafo {
     width: 100%;
 }
 
-.mt-6{
+.mt-6 {
     margin-top: 15vh;
-    align-items:center;
+    align-items: center;
 }
 
 /*DISCOGRAFIA------------------------------------------------------------------------------------------------*/
-
-.body_discografia{
+.body_discografia {
     background-image: url("../assets/img/fondo_galeria.jpg");
-    background-size:cover;
+    background-size: cover;
 }
 
-.portada_discografia{
+.portada_discografia {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     margin: 15vh;
 }
 
-.portada__imagen{
+.portada__imagen {
     text-align: center;
 }
 
-.portada__imagen_img{
+.portada__imagen_img {
     width: 40%;
     border-radius: 10%;
 }
 
-.albumes{
+.albumes {
     display: flex;
     flex-wrap: wrap;
     height: 150vh;
@@ -151,21 +150,21 @@ body {
     gap: 0.5%;
 }
 
-.albumes_album{
+.albumes_album {
     width: 25%;
     margin-bottom: 3%;
 }
 
 /*GALERIA----------------------------------------------------------------------------------------------------*/
-
-.body_galeria{
+.body_galeria {
     background-image: url("../assets/img/fondo_discografia.jpg");
 }
 
-.galeria{
+.galeria {
     margin-bottom: 3%;
 }
-.galeria__fotos{
+
+.galeria__fotos {
     display: flex;
     flex-wrap: wrap;
     height: auto;
@@ -174,76 +173,72 @@ body {
     gap: 0.2%;
 }
 
-.galeria__fotos_foto{
+.galeria__fotos_foto {
     width: 30%;
 }
 
-.galeria__fotos_foto img{
+.galeria__fotos_foto img {
     width: 100%;
     height: 98%;
 }
 
 /*MIEMBROS---------------------------------------------------------------------------------------------------*/
-
-.body_miembros{
+.body_miembros {
     background-image: url("../assets/img/fondo_miembros.jpg");
 }
 
-.banda__miembro_img{
+.banda__miembro_img {
     border-radius: 10%;
     margin-top: 3%;
     margin-bottom: 3%;
 }
 
 /*CONTACTO---------------------------------------------------------------------------------------------------*/
-
-.body_contacto{
+.body_contacto {
     background-image: url("../assets/img/fondo_contacto.jpg");
 }
 
-.formulario{
+.formulario {
     background-color: white;
     border-radius: 5%;
     padding: 2%;
     width: 70%;
-    color: rgb(58, 58, 58);
+    color: #3a3a3a;
     font-size: 1rem;
 }
 
-.dato{
+.dato {
     outline: none;
-    border: solid 1px rgb(117, 117, 117);
+    border: solid 1px #757575;
     padding: 0.5rem;
     margin: 1% 0 5% 0;
     width: 100%;
 }
 
-.dato:focus{
+.dato:focus {
     border-color: black;
 }
 
-.boton{
+.boton {
     border-radius: 0.5rem;
     display: inline-block;
     padding: 1.2rem 1rem;
     color: white;
     width: 100%;
     margin: 1% 0 3% 0;
-    border: none
+    border: none;
 }
 
-.boton:hover{
+.boton:hover {
     border-style: solid;
     border-width: 1px;
     border-color: black;
 }
 
-.boton_verde{
+.boton_verde {
     background-color: #3CC93F;
 }
 
-.boton_rojo{
+.boton_rojo {
     background-color: #ca1717;
 }
-
-
