@@ -1,0 +1,13 @@
+.albumes {
+    display: flex;
+    flex-wrap: wrap;
+    height: 150vh;                  /*Corregir tamaño*/
+    justify-content: space-evenly;
+    gap: 0.5%;
+
+    &_album {
+        width: 25vw;                   /*Corregir tamaño*/
+        margin-bottom: 3%;
+    }
+}
+
