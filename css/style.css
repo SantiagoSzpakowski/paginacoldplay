@@ -6,6 +6,7 @@
   padding: 0;
 }
 
+/*Tambien se puede agregar mixins a los anchos para cambiar de tamaño de dispositivo*/
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 100%;
@@ -95,23 +96,34 @@ body {
 }
 
 /*PORTADA GENERAL--------------------------------------------------------------------------------------------*/
-.portada {
+.portada, .portada_discografia {
   margin: 15vh;
   align-items: center;
 }
-
 .portada__texto {
+  height: auto;
   width: 80%;
   margin-right: 0%;
 }
-
 .portada__texto_titulo {
   margin-bottom: 2%;
   font-size: 3rem;
 }
-
 .portada__texto_parrafo {
+  height: auto;
   width: 100%;
+}
+.portada__imagen {
+  text-align: center;
+}
+.portada__imagen_img {
+  height: auto;
+  width: 40%;
+  border-radius: 10%;
+}
+.portada_discografia {
+  display: flex;
+  justify-content: space-around;
 }
 
 .mt-6 {
@@ -123,22 +135,6 @@ body {
 .body_discografia {
   background-image: url("../assets/img/fondo_discografia.jpg");
   background-size: cover;
-}
-
-.portada_discografia {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 15vh;
-}
-
-.portada__imagen {
-  text-align: center;
-}
-
-.portada__imagen_img {
-  width: 40%;
-  border-radius: 10%;
 }
 
 .albumes {
@@ -176,16 +172,10 @@ body {
   width: 30%; /*Corregir tamaño*/
 }
 .galeria__fotos_foto img {
-  width: 100%;
   height: 98%;
+  width: 100%;
 }
 
-/*
-.galeria__fotos_foto img{
-    width: 100%;
-    height: 98%;
-}
-*/
 /*MIEMBROS---------------------------------------------------------------------------------------------------*/
 .body_miembros {
   background-image: url("../assets/img/fondo_miembros.jpg");

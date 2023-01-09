@@ -1,5 +1,5 @@
-@mixin ancho ($ancho){
-    height: auto;
+@mixin ancho ($ancho, $alto: auto){
+    height: $alto;
     width: $ancho;
 }
 

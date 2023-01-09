@@ -2,7 +2,7 @@
 
 @import "../sass/normalize/reset";
 @import "../sass/utilities/color";
-
+@import "../sass/utilities/mixins";
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
@@ -92,29 +92,8 @@ body {
 }
 
 /*PORTADA GENERAL--------------------------------------------------------------------------------------------*/
-.portada {
-    margin: 15vh;
-    align-items: center;
-}
 
-.portada__texto {
-    width: 80%;
-    margin-right: 0%;
-}
-
-.portada__texto_titulo {
-    margin-bottom: 2%;
-    font-size: 3rem;
-}
-
-.portada__texto_parrafo {
-    width: 100%;
-}
-
-.mt-6 {
-    margin-top: 15vh;
-    align-items: center;
-}
+@import "../sass/general/portada";
 
 /*DISCOGRAFIA------------------------------------------------------------------------------------------------*/
 .body_discografia {
@@ -122,21 +101,7 @@ body {
     background-size: cover;
 }
 
-.portada_discografia {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 15vh;
-}
 
-.portada__imagen {
-    text-align: center;
-}
-
-.portada__imagen_img {
-    width: 40%;
-    border-radius: 10%;
-}
 
 .albumes {
     display: flex;

@@ -1,0 +1,43 @@
+.portada {
+    margin: 15vh;
+    align-items: center;
+
+    &__texto {
+        @include ancho(80%);
+        margin-right: 0%;
+
+        &_titulo {
+            margin-bottom: 2%;
+            font-size: 3rem;
+        }
+
+        &_parrafo {
+            @include ancho(100%)
+        }
+    }
+
+    &__imagen {
+        text-align: center;
+        
+        &_img {
+            @include ancho(40%);
+            border-radius: 10%;
+        }
+    }
+
+    &_discografia {
+        display: flex;
+        justify-content: space-around;
+        @extend .portada;
+    }
+}
+
+.mt-6 {
+    margin-top: 15vh;
+    align-items: center;
+}
+
+
+
+
+
