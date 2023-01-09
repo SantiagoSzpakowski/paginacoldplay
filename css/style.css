@@ -14,6 +14,20 @@ body {
   color: white;
 }
 
+.body_discografia {
+  background-image: url("../../assets/img/fondo_discografia.jpg");
+  background-size: cover;
+}
+.body_miembros {
+  background-image: url("../../assets/img/fondo_miembros.jpg");
+}
+.body_contacto {
+  background-image: url("../../assets/img/fondo_contacto.jpg");
+}
+.body_galeria {
+  background-image: url("../../assets/img/fondo_galeria.jpg");
+}
+
 .formato_texto {
   font-size: 1.4rem;
   text-align: left;
@@ -31,12 +45,12 @@ body {
 }
 
 .img-uno {
-  background-image: url("../assets/img/portada.jpg");
+  background-image: url("../../assets/img/portada.jpg");
   height: 40rem;
 }
 
 .img-dos {
-  background-image: url("../assets/img/pyl.jpg");
+  background-image: url("../../assets/img/pyl.jpg");
   height: 25rem;
 }
 
@@ -47,12 +61,10 @@ body {
   top: 70%;
   width: 80%;
 }
-
 .texto-interior h1 {
   font-size: 7rem;
   font-weight: bold;
 }
-
 .texto-interior h2 {
   font-size: 5rem;
 }
@@ -61,11 +73,9 @@ body {
   position: relative;
   background-color: black;
 }
-
 .imgTxtPrincipal__img {
   width: 100%;
 }
-
 .imgTxtPrincipal__parrafo {
   margin: 0px 30vw 0px 0px;
   position: absolute;
@@ -80,11 +90,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .premios_logros__lista {
   list-style: none;
 }
-
 .premios_logros__lista li {
   padding: 1%;
   font-size: 1rem;
@@ -132,33 +140,23 @@ body {
 }
 
 /*DISCOGRAFIA------------------------------------------------------------------------------------------------*/
-.body_discografia {
-  background-image: url("../assets/img/fondo_discografia.jpg");
-  background-size: cover;
-}
-
 .albumes {
   display: flex;
   flex-wrap: wrap;
-  height: 350vh; /*Corregir tamaño*/
+  height: 150vh; /*Corregir tamaño*/
   justify-content: space-evenly;
   gap: 0.5%;
 }
 
 .albumes_album {
-  width: 350px; /*Corregir tamaño*/
+  width: 25vw; /*Corregir tamaño*/
   margin-bottom: 3%;
 }
 
 /*GALERIA----------------------------------------------------------------------------------------------------*/
-.body_galeria {
-  background-image: url("../../assets/img/fondo_discografia.jpg");
-}
-
 .galeria {
   margin-bottom: 3%;
 }
-
 .galeria__fotos {
   display: flex;
   flex-wrap: wrap;
@@ -167,7 +165,6 @@ body {
   list-style: none;
   gap: 0.2%;
 }
-
 .galeria__fotos_foto {
   width: 30%; /*Corregir tamaño*/
 }
@@ -177,10 +174,6 @@ body {
 }
 
 /*MIEMBROS---------------------------------------------------------------------------------------------------*/
-.body_miembros {
-  background-image: url("../assets/img/fondo_miembros.jpg");
-}
-
 .banda__miembro_img {
   border-radius: 10%;
   margin-top: 3%;
@@ -188,10 +181,6 @@ body {
 }
 
 /*CONTACTO---------------------------------------------------------------------------------------------------*/
-.body_contacto {
-  background-image: url("../assets/img/fondo_contacto.jpg");
-}
-
 .formulario {
   background-color: white;
   border-radius: 5%;
@@ -208,7 +197,6 @@ body {
   margin: 1% 0 5% 0;
   width: 100%;
 }
-
 .dato:focus {
   border-color: black;
 }
@@ -222,17 +210,14 @@ body {
   margin: 1% 0 3% 0;
   border: none;
 }
-
 .boton:hover {
   border-style: solid;
   border-width: 1px;
   border-color: black;
 }
-
 .boton_verde {
   background-color: #3CC93F;
 }
-
 .boton_rojo {
   background-color: #ca1717;
 }/*# sourceMappingURL=style.css.map */

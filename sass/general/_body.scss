@@ -1,0 +1,28 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    line-height: 1.3;
+    color: $blanco;
+}
+
+.body{
+    &_discografia {
+        background-image: url("../../assets/img/fondo_discografia.jpg");
+        background-size: cover;
+    }
+    
+    &_miembros {
+        background-image: url("../../assets/img/fondo_miembros.jpg");
+    }
+    
+    &_contacto {
+        background-image: url("../../assets/img/fondo_contacto.jpg");
+    }
+
+    &_galeria {
+        background-image: url("../../assets/img/fondo_galeria.jpg");
+    }
+}
+
+
+

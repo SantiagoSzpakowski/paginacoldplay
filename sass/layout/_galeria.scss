@@ -1,24 +1,25 @@
-.body_galeria {
-    background-image: url("../../assets/img/fondo_discografia.jpg");
-}
 
 .galeria {
     margin-bottom: 3%;
-}
 
-.galeria__fotos {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    justify-content: center;
-    list-style: none;
-    gap: 0.2%;
-}
+    &__fotos {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        list-style: none;
+        gap: 0.2%;
 
-.galeria__fotos_foto {
-    width: 30%;             /*Corregir tamaño*/
-
-    img{
-        @include ancho(100%, 98%);
+        &_foto {
+            width: 30%;             /*Corregir tamaño*/
+        
+            img{
+                @include ancho(100%, 98%);
+            }
+        }
     }
 }
+
+
+
+

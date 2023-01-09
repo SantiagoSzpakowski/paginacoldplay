@@ -1,0 +1,25 @@
+
+.formulario {
+    background-color: $blanco;
+    border-radius: 5%;
+    padding: 2%;
+    width: 70%;
+    color: $formularioBase;
+    font-size: 1rem;
+}
+
+.dato {
+    outline: none;
+    border: solid 1px $formularioBordes;
+    padding: 0.5rem;
+    margin: 1% 0 5% 0;
+    width: 100%;
+
+    &:focus {
+        border-color: $negro;
+    }
+}
+
+
+
+@import "../components/boton";

@@ -1,0 +1,26 @@
+.boton {
+    border-radius: 0.5rem;
+    display: inline-block;
+    padding: 1.2rem 1rem;
+    color: $blanco;
+    width: 100%;
+    margin: 1% 0 3% 0;
+    border: none;
+
+    &:hover {
+        border-style: solid;
+        border-width: 1px;
+        border-color: $negro;
+    }
+
+    &_verde {
+        background-color: map-get($colores_boton, btnEnviar);
+    }
+    
+    &_rojo {
+        background-color: map-get($colores_boton, btnBorrar);
+    }
+}
+
+
+
