@@ -3,7 +3,7 @@
     align-items: center;
 
     &__texto {
-        @include ancho(80%);
+        @include ancho(100%);
         margin-right: 0%;
 
         &_titulo {
@@ -12,7 +12,7 @@
         }
 
         &_parrafo {
-            @include ancho(100%)
+            @extend .portada__texto;
         }
     }
 

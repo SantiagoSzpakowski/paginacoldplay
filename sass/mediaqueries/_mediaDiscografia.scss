@@ -1,0 +1,42 @@
+@media screen and (max-width: 720px) {
+
+    .grid {
+        grid-template-columns: 8fr;
+        grid-template-areas:    "titulo"
+                                "texto"
+                                "foto"
+                                "album";
+    }
+
+    .portada{
+        
+        &__texto_titulo {
+            text-align: center;
+
+            h1{
+                @include ancho(100%);
+            }
+        }
+    
+        &__texto_parrafo {
+            text-align: center;
+        }
+    
+        &__imagen {
+            padding: 5%;   
+            &_img {
+                @include ancho(30%);
+            }
+        }
+    }
+
+    .albumes {
+        gap: 1%;
+    
+        &_album {
+            @include ancho(300px, 400px);
+        }
+    }
+
+
+}

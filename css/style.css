@@ -81,16 +81,11 @@ body {
 .imgTxtPrincipal__parrafo {
   padding: 8%;
   margin: 0px 30vw 0px 0px;
-  /*
-  position: absolute;
-  top: 50%;
-  padding: 0vw 8vw 0vw 10vw;
-  transform: translate(0%, -50%);*/
 }
 
 .premios_logros {
   padding: 3% 5% 3% 5%;
-  background-image: url(../assets/img/logros.jpg);
+  background-image: url("../assets/img/logros.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -102,7 +97,16 @@ body {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1240px) {
+  .imgTxtPrincipal {
+    background-position: 15%;
+  }
+  .imgTxtPrincipal__parrafo {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  /*1100px*/
   .formato_texto {
     font-size: 1rem;
     line-height: 1.2rem;
@@ -173,20 +177,15 @@ footer {
   margin: 15vh;
   align-items: center;
 }
-.portada__texto {
+.portada__texto, .portada__texto_parrafo {
   height: auto;
-  width: 80%;
+  width: 100%;
   margin-right: 0%;
 }
 .portada__texto_titulo {
   margin-bottom: 2%;
   font-size: 3rem;
 }
-.portada__texto_parrafo {
-  height: auto;
-  width: 100%;
-}
-
 .mt-6 {
   margin-top: 15vh;
   align-items: center;
@@ -210,8 +209,6 @@ footer {
 .portada__imagen {
   text-align: center;
   grid-area: foto;
-  padding: 0;
-  margin: 0;
   height: auto;
   width: 100%;
   justify-items: center;
@@ -227,15 +224,45 @@ footer {
   margin-top: 8%;
   display: flex;
   flex-wrap: wrap;
-  height: 150vh; /*Corregir tamaño*/
   justify-content: space-evenly;
   gap: 0.5%;
 }
 .albumes_album {
-  width: 25vw; /*Corregir tamaño*/
+  height: 450px;
+  width: 350px;
   margin-bottom: 3%;
 }
 
+@media screen and (max-width: 720px) {
+  .grid {
+    grid-template-columns: 8fr;
+    grid-template-areas: "titulo" "texto" "foto" "album";
+  }
+  .portada__texto_titulo {
+    text-align: center;
+  }
+  .portada__texto_titulo h1 {
+    height: auto;
+    width: 100%;
+  }
+  .portada__texto_parrafo {
+    text-align: center;
+  }
+  .portada__imagen {
+    padding: 5%;
+  }
+  .portada__imagen_img {
+    height: auto;
+    width: 30%;
+  }
+  .albumes {
+    gap: 1%;
+  }
+  .albumes_album {
+    height: 400px;
+    width: 300px;
+  }
+}
 /*GALERIA----------------------------------------------------------------------------------------------------*/
 .galeria {
   margin-bottom: 3%;
