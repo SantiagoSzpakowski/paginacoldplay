@@ -1,4 +1,42 @@
+
+.grid {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    grid-template-areas:    "titulo foto"
+                            "texto  foto"
+                            "album  album";
+    align-items: center;
+}
+
+.portada{
+    &__texto_titulo {
+        grid-area: titulo;
+    }
+
+    &__texto_parrafo {
+        grid-area: texto;
+    }
+
+    &__imagen {
+        text-align: center;
+        grid-area: foto;
+        padding: 0;
+        margin: 0;
+        @include ancho(100%);
+        justify-items: center;
+
+        &_img {
+            @include ancho(70%);
+            border-radius: 10%;
+        }
+    }
+}
+
 .albumes {
+    grid-area: album;
+    margin-top: 8%;
+
     display: flex;
     flex-wrap: wrap;
     height: 150vh;                  /*Corregir tamaño*/

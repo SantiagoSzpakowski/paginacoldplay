@@ -16,20 +16,6 @@
         }
     }
 
-    &__imagen {
-        text-align: center;
-        
-        &_img {
-            @include ancho(40%);
-            border-radius: 10%;
-        }
-    }
-
-    &_discografia {
-        display: flex;
-        justify-content: space-around;
-        @extend .portada;
-    }
 }
 
 .mt-6 {

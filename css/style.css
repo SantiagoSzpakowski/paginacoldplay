@@ -6,7 +6,6 @@
   padding: 0;
 }
 
-/*Tambien se puede agregar mixins a los anchos para cambiar de tamaño de dispositivo*/
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 100%;
@@ -170,7 +169,7 @@ footer {
 }
 
 /*PORTADA GENERAL--------------------------------------------------------------------------------------------*/
-.portada, .portada_discografia {
+.portada {
   margin: 15vh;
   align-items: center;
 }
@@ -187,18 +186,6 @@ footer {
   height: auto;
   width: 100%;
 }
-.portada__imagen {
-  text-align: center;
-}
-.portada__imagen_img {
-  height: auto;
-  width: 40%;
-  border-radius: 10%;
-}
-.portada_discografia {
-  display: flex;
-  justify-content: space-around;
-}
 
 .mt-6 {
   margin-top: 15vh;
@@ -206,7 +193,38 @@ footer {
 }
 
 /*DISCOGRAFIA------------------------------------------------------------------------------------------------*/
+.grid {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  grid-template-areas: "titulo foto" "texto  foto" "album  album";
+  align-items: center;
+}
+
+.portada__texto_titulo {
+  grid-area: titulo;
+}
+.portada__texto_parrafo {
+  grid-area: texto;
+}
+.portada__imagen {
+  text-align: center;
+  grid-area: foto;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: 100%;
+  justify-items: center;
+}
+.portada__imagen_img {
+  height: auto;
+  width: 70%;
+  border-radius: 10%;
+}
+
 .albumes {
+  grid-area: album;
+  margin-top: 8%;
   display: flex;
   flex-wrap: wrap;
   height: 150vh; /*Corregir tamaño*/
