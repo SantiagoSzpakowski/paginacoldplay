@@ -36,18 +36,25 @@
 
 .imgTxtPrincipal {
     position: relative;
-    background-color: $negro;
+    background-image: url("../../assets/img/fondo_texto.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
 
     &__img {
         width: 100%;
     }
 
     &__parrafo {
+        padding: 8%;
         margin: 0px 30vw 0px 0px;
+        
+
+        /*
         position: absolute;
         top: 50%;
         padding: 0vw 8vw 0vw 10vw;
-        transform: translate(0%, -50%);
+        transform: translate(0%, -50%);*/
     }
 }
 
@@ -66,7 +73,6 @@
         }
     }
 }
-
 
 
 

@@ -71,17 +71,22 @@ body {
 
 .imgTxtPrincipal {
   position: relative;
-  background-color: black;
+  background-image: url("../../assets/img/fondo_texto.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
 }
 .imgTxtPrincipal__img {
   width: 100%;
 }
 .imgTxtPrincipal__parrafo {
+  padding: 8%;
   margin: 0px 30vw 0px 0px;
+  /*
   position: absolute;
   top: 50%;
   padding: 0vw 8vw 0vw 10vw;
-  transform: translate(0%, -50%);
+  transform: translate(0%, -50%);*/
 }
 
 .premios_logros {
@@ -98,6 +103,63 @@ body {
   font-size: 1rem;
 }
 
+@media screen and (max-width: 1100px) {
+  .formato_texto {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .texto-interior {
+    top: 80%;
+  }
+  .texto-interior h1 {
+    font-size: 4rem;
+  }
+  .texto-interior h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .imgTxtPrincipal {
+    background-image: url("../../assets/img/fondo_texto_sin_banda.jpg");
+    background-size: cover;
+  }
+  .imgTxtPrincipal__parrafo {
+    position: relative;
+    padding: 10vw 5vw 10vw 5vw;
+    transform: translate(0%, 0%);
+    width: 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .texto-interior h2 {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .formato_texto {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .parallax {
+    background-attachment: scroll;
+  }
+  .img-uno {
+    height: 25rem;
+  }
+  .img-dos {
+    height: 25rem;
+  }
+  .texto-interior {
+    font-size: 2rem;
+    top: 75%;
+  }
+  .premios_logros {
+    padding: 5%;
+  }
+  .premios_logros__lista li {
+    padding: 2%;
+  }
+}
 /*FOOTER-----------------------------------------------------------------------------------------------------*/
 footer {
   color: white;

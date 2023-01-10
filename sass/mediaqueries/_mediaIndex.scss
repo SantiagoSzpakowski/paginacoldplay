@@ -1,0 +1,77 @@
+@media screen and (max-width: 1100px) {
+
+    .formato_texto{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .texto-interior {
+        top: 80%;
+    
+        h1 {
+            font-size: 4rem;
+        }
+    
+        h2 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .imgTxtPrincipal{
+        background-image: url("../../assets/img/fondo_texto_sin_banda.jpg");
+        background-size: cover;
+
+        &__parrafo{
+            position:relative;
+            padding: 10vw 5vw 10vw 5vw;
+            transform: translate(0%, 0%);
+            width: 100%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 460px){
+    .texto-interior h2{
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .formato_texto{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .parallax {
+        background-attachment:scroll;
+    }
+    
+    .img-uno {
+        height: 25rem;
+    }
+    
+    .img-dos{
+        height: 25rem;
+    }
+    
+    .texto-interior{
+        font-size: 2rem;
+        top:75%;
+    }
+    
+    .premios_logros{
+        padding: 5%;
+
+        &__lista{
+            li{
+                padding: 2%;
+            }
+        }
+    }
+}
+
