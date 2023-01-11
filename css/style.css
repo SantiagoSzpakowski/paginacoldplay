@@ -119,6 +119,117 @@ footer {
   font-size: 1rem;
 }
 
+/*MIEMBROS---------------------------------------------------------------------------------------------------*/
+.banda__miembro_img {
+  border-radius: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+/*DISCOGRAFIA------------------------------------------------------------------------------------------------*/
+.grid {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  grid-template-areas: "titulo foto" "texto  foto" "album  album";
+  align-items: center;
+}
+
+.portada__texto_titulo {
+  grid-area: titulo;
+}
+.portada__texto_parrafo {
+  grid-area: texto;
+}
+.portada__imagen {
+  text-align: center;
+  grid-area: foto;
+  height: auto;
+  width: 100%;
+  justify-items: center;
+}
+.portada__imagen_img {
+  height: auto;
+  width: 70%;
+  border-radius: 10%;
+}
+
+.albumes {
+  grid-area: album;
+  margin-top: 8%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 0.5%;
+}
+.albumes_album {
+  height: 450px;
+  width: 350px;
+  margin-bottom: 3%;
+}
+
+/*GALERIA----------------------------------------------------------------------------------------------------*/
+.galeria {
+  margin-bottom: 3%;
+}
+.galeria__fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.galeria__fotos_foto {
+  width: 350px;
+  padding-bottom: 5%;
+}
+.galeria__fotos_foto img {
+  height: 98%;
+  width: 100%;
+}
+
+/*CONTACTO---------------------------------------------------------------------------------------------------*/
+.formulario {
+  background-color: white;
+  border-radius: 5%;
+  padding: 2%;
+  width: 70%;
+  color: #3a3a3a;
+  font-size: 1rem;
+}
+
+.dato {
+  outline: none;
+  border: solid 1px #757575;
+  padding: 0.5rem;
+  margin: 1% 0 5% 0;
+  width: 100%;
+}
+.dato:focus {
+  border-color: black;
+}
+
+.boton {
+  border-radius: 0.5rem;
+  display: inline-block;
+  padding: 1.2rem 1rem;
+  color: white;
+  width: 100%;
+  margin: 1% 0 3% 0;
+  border: none;
+}
+.boton:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+.boton_verde {
+  background-color: #3CC93F;
+}
+.boton_rojo {
+  background-color: #ca1717;
+}
+
+/*MEDIAQUERY---------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1240px) {
   .imgTxtPrincipal {
     background-position: 15%;
@@ -184,60 +295,20 @@ footer {
     padding: 2%;
   }
 }
-/*MIEMBROS---------------------------------------------------------------------------------------------------*/
-.banda__miembro_img {
-  border-radius: 10%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-}
-
-/*DISCOGRAFIA------------------------------------------------------------------------------------------------*/
-.grid {
-  margin: 5%;
-  display: grid;
-  grid-template-columns: 6fr 2fr;
-  grid-template-areas: "titulo foto" "texto  foto" "album  album";
-  align-items: center;
-}
-
-.portada__texto_titulo {
-  grid-area: titulo;
-}
-.portada__texto_parrafo {
-  grid-area: texto;
-}
-.portada__imagen {
-  text-align: center;
-  grid-area: foto;
-  height: auto;
-  width: 100%;
-  justify-items: center;
-}
-.portada__imagen_img {
-  height: auto;
-  width: 70%;
-  border-radius: 10%;
-}
-
-.albumes {
-  grid-area: album;
-  margin-top: 8%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 0.5%;
-}
-.albumes_album {
-  height: 450px;
-  width: 350px;
-  margin-bottom: 3%;
-}
-
 @media screen and (max-width: 720px) {
   .grid {
     grid-template-columns: 8fr;
     grid-template-areas: "titulo" "texto" "foto" "album";
   }
+  .albumes {
+    gap: 1%;
+  }
+  .albumes_album {
+    height: 400px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 720px) {
   .portada__texto_titulo {
     text-align: center;
   }
@@ -255,71 +326,4 @@ footer {
     height: auto;
     width: 30%;
   }
-  .albumes {
-    gap: 1%;
-  }
-  .albumes_album {
-    height: 400px;
-    width: 300px;
-  }
-}
-/*GALERIA----------------------------------------------------------------------------------------------------*/
-.galeria {
-  margin-bottom: 3%;
-}
-.galeria__fotos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  list-style: none;
-}
-.galeria__fotos_foto {
-  width: 350px;
-  padding-bottom: 5%;
-}
-.galeria__fotos_foto img {
-  height: 98%;
-  width: 100%;
-}
-
-/*CONTACTO---------------------------------------------------------------------------------------------------*/
-.formulario {
-  background-color: white;
-  border-radius: 5%;
-  padding: 2%;
-  width: 70%;
-  color: #3a3a3a;
-  font-size: 1rem;
-}
-
-.dato {
-  outline: none;
-  border: solid 1px #757575;
-  padding: 0.5rem;
-  margin: 1% 0 5% 0;
-  width: 100%;
-}
-.dato:focus {
-  border-color: black;
-}
-
-.boton {
-  border-radius: 0.5rem;
-  display: inline-block;
-  padding: 1.2rem 1rem;
-  color: white;
-  width: 100%;
-  margin: 1% 0 3% 0;
-  border: none;
-}
-.boton:hover {
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-}
-.boton_verde {
-  background-color: #3CC93F;
-}
-.boton_rojo {
-  background-color: #ca1717;
 }/*# sourceMappingURL=style.css.map */

@@ -10,16 +10,17 @@
 @import "../sass/general/footerColor";
 /*PORTADA GENERAL--------------------------------------------------------------------------------------------*/
 @import "../sass/general/portada";
-@import "../sass/mediaqueries/mediaPortada";
 /*INDEX------------------------------------------------------------------------------------------------------*/
 @import "../sass/layout/index";
-@import "../sass/mediaqueries/mediaIndex";
 /*MIEMBROS---------------------------------------------------------------------------------------------------*/
 @import "../sass/layout/miembros";
 /*DISCOGRAFIA------------------------------------------------------------------------------------------------*/
 @import "../sass/layout/discografia";
-@import "../sass/mediaqueries/mediaDiscografia";
 /*GALERIA----------------------------------------------------------------------------------------------------*/
 @import "../sass/layout/galeria";
 /*CONTACTO---------------------------------------------------------------------------------------------------*/
 @import "../sass/layout/contacto";
+/*MEDIAQUERY---------------------------------------------------------------------------------------------------*/
+@import "../sass/mediaqueries/mediaIndex";
+@import "../sass/mediaqueries/mediaDiscografia";
+@import "../sass/mediaqueries/mediaPortada";
