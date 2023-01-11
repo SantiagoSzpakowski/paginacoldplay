@@ -8,28 +8,6 @@
                                 "album";
     }
 
-    .portada{
-        
-        &__texto_titulo {
-            text-align: center;
-
-            h1{
-                @include ancho(100%);
-            }
-        }
-    
-        &__texto_parrafo {
-            text-align: center;
-        }
-    
-        &__imagen {
-            padding: 5%;   
-            &_img {
-                @include ancho(30%);
-            }
-        }
-    }
-
     .albumes {
         gap: 1%;
     
