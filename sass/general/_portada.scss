@@ -1,10 +1,9 @@
 .portada {
-    margin: 15vh;
+    margin: 10vh 5vw;
     align-items: center;
 
     &__texto {
-        @include ancho(100%);
-        margin-right: 0%;
+        
 
         &_titulo {
             margin-bottom: 2%;
@@ -23,7 +22,10 @@
     align-items: center;
 }
 
-
+.fs-1{
+    
+}
+$font-sizes: 10rem;
 
 
 
