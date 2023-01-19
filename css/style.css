@@ -256,7 +256,7 @@ footer {
 }
 @media screen and (max-width: 900px) {
   .imgTxtPrincipal {
-    background-image: url("../../assets/img/fondo_texto_sin_banda.jpg");
+    background-image: url("../assets/img/fondo_texto_sin_banda.jpg");
     background-size: cover;
   }
   .imgTxtPrincipal__parrafo {
