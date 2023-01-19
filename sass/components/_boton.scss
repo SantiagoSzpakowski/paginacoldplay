@@ -7,18 +7,18 @@
     margin: 1% 0 3% 0;
     border: none;
 
-    &:hover {
-        border-style: solid;
-        border-width: 1px;
-        border-color: $negro;
-    }
-
     &_verde {
         background-color: map-get($colores_boton, btnEnviar);
+        border: 1px solid transparent;
     }
     
     &_rojo {
+        @extend .boton_verde;
         background-color: map-get($colores_boton, btnBorrar);
+    }
+
+    &:hover {
+        border: 1px solid $negro;
     }
 }
 
